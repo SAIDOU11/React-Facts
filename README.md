@@ -1,2 +1,5 @@
-# React-Facts
- React-Facts
+# The Frontend Developer Career Path
+
+# Module 11 Scrimba Frontend Developer Career Path. React Basics.
+
+- React-Facts
