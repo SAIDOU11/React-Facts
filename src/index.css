@@ -36,6 +36,9 @@ body {
 
 .main-content {
   background: #282d35;
+  background-image: url('./assets/react-icon-large.png');
+  background-repeat: no-repeat;
+  background-position: right 33%;
   color: #fff;
   padding: 2.5em 2.6em;
   height: 773px;
