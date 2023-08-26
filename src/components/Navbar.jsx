@@ -1,14 +1,17 @@
 import img from '../assets/react-icon-small.png';
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
-    <nav className="nav-container">
-      <div className="nav-logo">
-        <img style={{ width: '50px' }} src={img} alt="React logo" />
-        <h2 style={{ fontWeight: 'bold' }}>ReactFacts</h2>
-      </div>
-      <div className="nav-course">
-        <h3>React Course - Project 1</h3>
+    <nav className={props.darkMode ? 'dark' : ''}>
+      <img className="nav--logo_icon" src={img} alt="React logo" />
+      <h2 className="nav--logo_text">ReactFacts</h2>
+
+      <div className="toggler">
+        <p className="toggler--light">Light</p>
+        <div className="toggler--slider" onClick={props.toggleDarkMode}>
+          <div className="toggler--slider--circle"></div>
+        </div>
+        <p className="toggler--dark">Dark</p>
       </div>
     </nav>
   );
